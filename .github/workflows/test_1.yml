@@ -14,5 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: pwd
+        run: pwd
+
       - name: LS
         run: ls -al
+
+      - name: touch file
+        run: touch file.txt
+
+      - name: set text
+        run: echo "lorem ipsum" >> file.txt
+
+      - name: read file
+        run: cat file.txt
