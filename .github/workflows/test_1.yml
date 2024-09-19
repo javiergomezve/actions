@@ -1,6 +1,14 @@
 name: Hello world
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - qa
+  pull_request:
+    branches:
+      - main
+      - qa
 
 jobs:
   helllo:
