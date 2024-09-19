@@ -10,6 +10,9 @@ jobs:
       - name: Hello world
         run: echo "Hello world"
 
+  lorem:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: LS
         run: ls -al
-
