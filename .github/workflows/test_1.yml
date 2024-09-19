@@ -12,6 +12,7 @@ jobs:
 
   lorem:
     runs-on: ubuntu-latest
+    needs: [helllo]
 
     steps:
       - name: pwd
